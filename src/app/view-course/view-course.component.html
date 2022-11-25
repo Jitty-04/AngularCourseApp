@@ -2,10 +2,10 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <table class="table_borderless">
+            <table class="table">
                 <thead>
                   <tr>
-                    
+                    <th scope="col">Id</th>
                     <th scope="col"> Title</th>
                     <th scope="col">Description</th>
                     <th scope="col">Date</th>
@@ -14,13 +14,13 @@
                  </tr>
                 </thead>
                 <tbody>
-                  <tr *ngFor="let i of course">
-                    
-                    <td>{{i.title}}</td>
-                    <td>{{i.description}}</td>
-                    <td>{{i.date}}</td>
-                    <td>{{i.duration}}</td>
-                    <td>{{i.venue}}</td>
+                  <tr *ngFor="let i of courses">
+                    <td>{{i._id}}</td>
+                    <td>{{i.courseTitle}}</td>
+                    <td>{{i.courseDescription}}</td>
+                    <td>{{i.courseDate}}</td>
+                    <td>{{i.courseDuration}}</td>
+                    <td>{{i.courseVenue}}</td>
                 
                   </tr>
                  
